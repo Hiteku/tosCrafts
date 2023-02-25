@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>武裝龍刻搜尋器</title>
+  <link rel="icon" href="./icon/runeEquipment_108.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>武裝龍刻搜尋器</h1>
+
+  <form>
+    <div>
+      <input type="radio" name="attribute" value="none" id="attribute-none" checked>
+      <label for="attribute-none">通用</label>
+      
+      <input type="radio" name="attribute" value="water" id="attribute-water">
+      <label for="attribute-water">水</label>
+      
+      <input type="radio" name="attribute" value="fire" id="attribute-fire">
+      <label for="attribute-fire">火</label>
+      
+      <input type="radio" name="attribute" value="wood" id="attribute-wood">
+      <label for="attribute-wood">木</label>
+      
+      <input type="radio" name="attribute" value="light" id="attribute-light">
+      <label for="attribute-light">光</label>
+      
+      <input type="radio" name="attribute" value="dark" id="attribute-dark">
+      <label for="attribute-dark">暗</label>
+    </div>
+
+    <div>
+      <input type="radio" name="race" value="none" id="race-none" checked>
+      <label for="race-none">通用</label>
+      
+      <input type="radio" name="race" value="god" id="race-god">
+      <label for="race-god">神族</label>
+      
+      <input type="radio" name="race" value="demon" id="race-demon">
+      <label for="race-demon">魔族</label>
+      
+      <input type="radio" name="race" value="human" id="race-human">
+      <label for="race-human">人類</label>
+      
+      <input type="radio" name="race" value="beast" id="race-beast">
+      <label for="race-beast">獸類</label>
+      
+      <input type="radio" name="race" value="dragon" id="race-dragon">
+      <label for="race-dragon">龍類</label>
+      
+      <input type="radio" name="race" value="fairy" id="race-fairy">
+      <label for="race-fairy">妖精</label>
+      
+      <input type="radio" name="race" value="machine" id="race-machine">
+      <label for="race-machine">機械</label>
+    </div>
+
+
+    <div id="set_select">
+      <select>
+        <option name="set" value="none" checked>通用</option>
+        <option name="set" value="novaH">NOVA-H</option>
+        <option name="set" value="idol">偶像發表</option>
+        <option name="set" value="nordic">北歐神</option>
+        <option name="set" value="ancient">古蹟源龍</option>
+        <option name="set" value="timeGate">時空之門</option>
+        <option name="set" value="grace">鮮紅恩典</option>
+        <option name="set" value="witch">巫女</option>
+        <option name="set" value="warcraft">西方魔獸</option>
+        <option name="set" value="chineseBeasts">中國神獸</option>
+        <option name="set" value="ranger">遊俠</option>
+        <option name="set" value="egyptian">埃及神</option>
+        <option name="set" value="destiny">命運女神</option>
+        <option name="set" value="westJourney">中國神</option>
+        <option name="set" value="servant">龍僕</option>
+        <option name="set" value="protagonist">主角</option>
+        <option name="set" value="Molin">莫靈</option>
+        <option name="set" value="CangBi">蒼璧</option>
+        <option name="set" value="Matthew">馬休</option>
+      </select>
+    </div>
+    <!--
+    <div>
+      <input type="radio" name="skill" value="none" id="skill-none" checked>
+      <label for="skill-none">不限</label>
+      <input type="radio" name="skill" value="無視腐化" id="skill-corrupt">
+      <label for="skill-corrupt">無視腐化</label>
+      <input type="radio" name="skill" value="CD-2" id="skill-cd">
+      <label for="skill-cd">CD-2</label>
+    </div>
+    -->
+    <div>
+      <!--<input type="text" name="search" placeholder="請輸入關鍵字...">
+      <input type="button" value="重置" class="btn" id="reset-button">-->
+      <input type="button" value="顯示所有" class="btn" id="all-button">
+      <input type="button" value="篩選" class="btn" id="filter-button">
+    </div>
+  </form>
+  
+  <!--<ul id="crafts-list"></ul>-->
+  <table id="crafts-list">
+    <thead>
+      <tr>
+        <th style="width: 8%;"></th>
+        <th style="width: 10%;">名稱</th>
+        <th style="width: 5%;">屬性</th>
+        <th style="width: 5%;">種族</th>
+        <th style="width: 8%;">系列</th>
+        <th style="width: 35%;">取得方式</th>
+        <th style="width: 8%;">加成</th>
+        <th style="width: 21%;">效果</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+  
+  <script src="script.js"></script>
+  <script src="crafts.js"></script>
+</body>
+</html>
