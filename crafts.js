@@ -795,7 +795,7 @@ const crafts = [
   },
   {
     name: "桃花雛偶",
-    num: "",
+    num: "7245-7251",
     shape: "-",
     attribute: "none",
     race: "god",
