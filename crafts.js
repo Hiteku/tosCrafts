@@ -9,7 +9,7 @@ const crafts = [
     set: "none",
     acquire: "十三期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "進場CD-2\n消妖_自攻1.5倍\n消20粒_自攻1.15倍",
     leader: ""
   },
@@ -22,7 +22,7 @@ const crafts = [
     set: "none",
     acquire: "十二期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "進場CD-1\n消4連心回1.5倍隊回的血\n消神_神攻1.15倍",
     leader: ""
   },
@@ -35,7 +35,7 @@ const crafts = [
     set: "none",
     acquire: "十一期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "延1秒\n開技_自攻1.5倍\n消獸_自攻1.3倍",
     leader: ""
   },
@@ -48,7 +48,7 @@ const crafts = [
     set: "none",
     acquire: "十期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "延1秒\n進場CD-2\n消20粒_自攻1.25倍",
     leader: ""
   },
@@ -61,7 +61,7 @@ const crafts = [
     set: "none",
     acquire: "通過「影子中的龍牙」戰慄級 5 次",
     accumulate: "消除任何符石",
-    ability: "5/5/0",
+    ability: "+5%\n+5%\n+0%",
     skill: "進場CD-2\n開技_自攻1.8倍",
     leader: ""
   },
@@ -74,7 +74,7 @@ const crafts = [
     set: "none",
     acquire: "九期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "進場CD-2\n開技_自攻1.5倍\n消獸_自攻1.3倍",
     leader: ""
   },
@@ -87,7 +87,7 @@ const crafts = [
     set: "none",
     acquire: "八期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "進場CD-2\n消六種符石_自攻1.5倍\n對水目標_自攻1.2倍",
     leader: ""
   },
@@ -100,7 +100,7 @@ const crafts = [
     set: "none",
     acquire: "七期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "減傷10%\n消龍_自攻1.5倍\n開技_自攻1.5倍",
     leader: ""
   },
@@ -113,7 +113,7 @@ const crafts = [
     set: "none",
     acquire: "挑戰「沾染赤血的獸爪」討伐戰 15 次",
     accumulate: "消除任何符石",
-    ability: "0/5/5",
+    ability: "+0%\n+5%\n+5%",
     skill: "進場CD-2\n開技_自攻1.8倍",
     leader: ""
   },
@@ -126,7 +126,7 @@ const crafts = [
     set: "none",
     acquire: "通過「殲滅的電火並射」戰慄級 5 次",
     accumulate: "消除木符石",
-    ability: "5/0/5",
+    ability: "+5%\n+0%\n+5%",
     skill: "消25粒_自攻1.2倍\n開技_自攻1.5倍",
     leader: ""
   },
@@ -139,7 +139,7 @@ const crafts = [
     set: "none",
     acquire: "六期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "進場CD-1\n消妖_自攻1.5倍\n消25粒_自攻1.2倍",
     leader: ""
   },
@@ -152,7 +152,7 @@ const crafts = [
     set: "none",
     acquire: "五期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "必延1秒\n消妖_自攻1.5倍\n消20粒_自攻1.15倍",
     leader: ""
   },
@@ -165,7 +165,7 @@ const crafts = [
     set: "none",
     acquire: "四期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "必延1秒\n進場CD-1\n自身攻擊無視敵防",
     leader: ""
   },
@@ -178,7 +178,7 @@ const crafts = [
     set: "none",
     acquire: "通過「縱橫於天際之間」戰慄級 5 次",
     accumulate: "消除任何符石",
-    ability: "5/0/5",
+    ability: "+5%\n+0%\n+5%",
     skill: "消妖_自攻1.2倍\n消5連心_自攻1.15倍",
     leader: ""
   },
@@ -191,7 +191,7 @@ const crafts = [
     set: "none",
     acquire: "三期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "進場CD-2\n開技_自攻1.5倍\n消獸_自攻1.3倍",
     leader: ""
   },
@@ -204,7 +204,7 @@ const crafts = [
     set: "none",
     acquire: "挑戰「遮蓋天地的魔翼」討伐戰 15 次",
     accumulate: "連擊 4 或以上",
-    ability: "0/5/5",
+    ability: "+0%\n+5%\n+5%",
     skill: "延1.5秒\n消5連火_自攻1.3倍",
     leader: ""
   },
@@ -217,7 +217,7 @@ const crafts = [
     set: "none",
     acquire: "二期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "必延1秒\n進場CD-1\n消水光_自攻1.5倍",
     leader: ""
   },
@@ -230,7 +230,7 @@ const crafts = [
     set: "none",
     acquire: "首期「戰鬥通行證」豪華獎勵",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "進場CD-1\n每回合回復6000生命力\n消暗心_自攻1.2倍",
     leader: ""
   },
@@ -243,7 +243,7 @@ const crafts = [
     set: "none",
     acquire: "挑戰「掌控時局的貴公子」討伐戰 15 次",
     accumulate: "消除木符石",
-    ability: "0/5/5",
+    ability: "+0%\n+5%\n+5%",
     skill: "進場CD-2\n消20粒_自攻1.15倍",
     leader: ""
   },
@@ -256,7 +256,7 @@ const crafts = [
     set: "none",
     acquire: "挑戰「來一局高塔攻防戰」討伐戰 15 次",
     accumulate: "連擊 4 或以上",
-    ability: "0/5/5",
+    ability: "+0%\n+5%\n+5%",
     skill: "延1.5秒\n消5連光_自攻1.3倍",
     leader: ""
   },
@@ -269,7 +269,7 @@ const crafts = [
     set: "none",
     acquire: "通過「識別是非亦識諸味」戰慄級 5 次",
     accumulate: "消除任何符石",
-    ability: "5/0/5",
+    ability: "+5%\n+0%\n+5%",
     skill: "進場CD-2\n開技_自攻1.5倍",
     leader: ""
   },
@@ -282,7 +282,7 @@ const crafts = [
     set: "none",
     acquire: "挑戰「萬蛇出動」討伐戰 15 次",
     accumulate: "消除任何符石",
-    ability: "0/5/5",
+    ability: "+0%\n+5%\n+5%",
     skill: "進場CD-1\n進場CD-1",
     leader: ""
   },
@@ -295,7 +295,7 @@ const crafts = [
     set: "none",
     acquire: "挑戰「喜好移動屍體的怪癖」討伐戰 15 次",
     accumulate: "消除心符石",
-    ability: "0/5/5",
+    ability: "+0%\n+5%\n+5%",
     skill: "消妖_自攻1.2倍\n消5連心_自攻1.15倍",
     leader: ""
   },
@@ -308,7 +308,7 @@ const crafts = [
     set: "none",
     acquire: "挑戰「於大世界中覓道救眾」討伐戰 15 次",
     accumulate: "消除任何符石",
-    ability: "5/5/0",
+    ability: "+5%\n+5%\n+0%",
     skill: "延1.5秒\n消獸_自攻1.3倍",
     leader: ""
   },
@@ -321,7 +321,7 @@ const crafts = [
     set: "none",
     acquire: "通過「拯救迷路者的善獸」戰慄級 5 次",
     accumulate: "消除任何符石",
-    ability: "5/5/0",
+    ability: "+5%\n+5%\n+0%",
     skill: "延1.5秒\n消獸_自攻1.3倍",
     leader: ""
   },
@@ -334,7 +334,7 @@ const crafts = [
     set: "novaH",
     acquire: "「聖誕冬祭」道具收集任務",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "進場CD-3\n消20粒_自攻1.15倍\n開技_自攻1.5倍",
     leader: ""
   },
@@ -347,7 +347,7 @@ const crafts = [
     set: "idol",
     acquire: "《偶像女團》活動期間",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "延1秒\n進場CD-2\n開技_自攻1.5倍",
     leader: ""
   },
@@ -360,7 +360,7 @@ const crafts = [
     set: "none",
     acquire: "使用「魔滅・一願」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "必延1秒\n消8粒_自攻2倍\n魔1.05倍攻擊",
     leader: ""
   },
@@ -373,7 +373,7 @@ const crafts = [
     set: "none",
     acquire: "使用「神創・零覓」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "必延1秒\n消5種符石_自攻2倍\n神1.05倍生命",
     leader: ""
   },
@@ -386,7 +386,7 @@ const crafts = [
     set: "none",
     acquire: "使用「極限魔祭・司路域」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "必延1秒\n消3種符石_自攻1.5倍\n若人_自血1.15倍",
     leader: ""
   },
@@ -399,7 +399,7 @@ const crafts = [
     set: "none",
     acquire: "使用「獸道征途・凱撒」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "必延1秒\n消15粒獸_自攻1.1倍\n若獸_自血1.15倍",
     leader: ""
   },
@@ -412,7 +412,7 @@ const crafts = [
     set: "none",
     acquire: "使用「染香綺狐・妲己」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "必延1秒\n消25粒_自攻1.6倍\n若妖_自血1.15倍",
     leader: ""
   },
@@ -425,7 +425,7 @@ const crafts = [
     set: "none",
     acquire: "使用「最初的仿魂・莉莉絲」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "必延1秒\n消8粒_自攻2倍\n機攻1.05倍",
     leader: ""
   },
@@ -438,7 +438,7 @@ const crafts = [
     set: "none",
     acquire: "使用「天道炎旌・刻琿」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "必延1秒\n消15粒龍_自攻1.1倍\n若龍_自血1.1倍",
     leader: ""
   },
@@ -451,7 +451,7 @@ const crafts = [
     set: "none",
     acquire: "使用「環光聖戰・涅索伊」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "必延1秒\n消光3粒_自攻1.2倍\n若神_自攻1.2倍",
     leader: ""
   },
@@ -464,7 +464,7 @@ const crafts = [
     set: "none",
     acquire: "使用「朔月帝女・卑彌呼」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "必延1秒\n進場CD-1\n若人自身生命力1.15倍",
     leader: ""
   },
@@ -477,7 +477,7 @@ const crafts = [
     set: "none",
     acquire: "使用「召喚師候選者」與「芸芸眾生」系列進行熔爐",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "開技_自攻1.5倍\n消3種符石_自攻1.5倍",
     leader: ""
   },
@@ -490,7 +490,7 @@ const crafts = [
     set: "none",
     acquire: "使用「召喚師候選者」與「芸芸眾生」系列進行熔爐",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "開技_自攻1.5倍\n消3種符石_自攻1.5倍",
     leader: ""
   },
@@ -503,7 +503,7 @@ const crafts = [
     set: "none",
     acquire: "使用「召喚師候選者」與「芸芸眾生」系列進行熔爐",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "開技_自攻1.5倍\n消3種符石_自攻1.5倍",
     leader: ""
   },
@@ -516,7 +516,7 @@ const crafts = [
     set: "none",
     acquire: "使用「召喚師候選者」與「芸芸眾生」系列進行熔爐",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "開技_自攻1.5倍\n消3種符石_自攻1.5倍",
     leader: ""
   },
@@ -529,7 +529,7 @@ const crafts = [
     set: "none",
     acquire: "使用「召喚師候選者」與「芸芸眾生」系列進行熔爐",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "開技_自攻1.5倍\n消3種符石_自攻1.5倍",
     leader: ""
   },
@@ -542,7 +542,7 @@ const crafts = [
     set: "none",
     acquire: "龍金屬封印",
     accumulate: "消除水符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "延1秒\n消同屬4粒_自攻1.15倍\n對火目標_自攻1.15倍",
     leader: ""
   },
@@ -555,7 +555,7 @@ const crafts = [
     set: "none",
     acquire: "龍金屬封印",
     accumulate: "消除火符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "延1秒\n消同屬4粒_自攻1.15倍\n對木目標_自攻1.15倍",
     leader: ""
   },
@@ -568,7 +568,7 @@ const crafts = [
     set: "none",
     acquire: "龍金屬封印",
     accumulate: "消除木符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "延1秒\n消同屬4粒_自攻1.15倍\n對水目標_自攻1.15倍",
     leader: ""
   },
@@ -581,7 +581,7 @@ const crafts = [
     set: "none",
     acquire: "龍金屬封印",
     accumulate: "消除光符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "延1秒\n消同屬4粒_自攻1.15倍\n對暗目標_自攻1.15倍",
     leader: ""
   },
@@ -594,7 +594,7 @@ const crafts = [
     set: "none",
     acquire: "龍金屬封印",
     accumulate: "消除暗符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "延1秒\n消同屬4粒_自攻1.15倍\n對光目標_自攻1.15倍",
     leader: ""
   },
@@ -607,7 +607,7 @@ const crafts = [
     set: "none",
     acquire: "使用「埼玉」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "必延1秒\n消30粒_自攻1.6倍\n若人_自攻1.1倍",
     leader: ""
   },
@@ -620,7 +620,7 @@ const crafts = [
     set: "none",
     acquire: "使用「魔權在握・巴力」或「瀾漫勾惑・夏娃」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "必延1秒\n消魔_自攻1.15倍\n若魔_自血1.15倍",
     leader: ""
   },
@@ -633,7 +633,7 @@ const crafts = [
     set: "none",
     acquire: "使用「異變．夏馬西」進行熔爐",
     accumulate: "",
-    ability: "0/0/0",
+    ability: "+?%\n+?%\n+?%",
     skill: "無視腐化",
     leader: ""
   },
@@ -646,7 +646,7 @@ const crafts = [
     set: "none",
     acquire: "使用「異變．卡俄斯」進行熔爐",
     accumulate: "",
-    ability: "0/0/0",
+    ability: "+?%\n+?%\n+?%",
     skill: "無視腐化",
     leader: ""
   },
@@ -659,7 +659,7 @@ const crafts = [
     set: "none",
     acquire: "使用「維度粉碎・猶格索托斯」進行熔爐",
     accumulate: "連擊 4 或以上",
-    ability: "0/10/10",
+    ability: "+0%\n+10%\n+10%",
     skill: "延8秒\n消5種符石_自攻1.8倍\n無視腐化",
     leader: ""
   },
@@ -672,7 +672,7 @@ const crafts = [
     set: "none",
     acquire: "使用「常世否定・姬氏」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "5/5/10",
+    ability: "+5%\n+5%\n+10%",
     skill: "延1秒\n進場CD-2\n無視腐化",
     leader: ""
   },
@@ -685,7 +685,7 @@ const crafts = [
     set: "none",
     acquire: "使用「存在質疑・路西法」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "消神_自攻1.5倍\n消光與暗_自攻1.5倍\n無視腐化",
     leader: ""
   },
@@ -698,7 +698,7 @@ const crafts = [
     set: "none",
     acquire: "使用「生死剝離．尼德霍格」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "15/5/0",
+    ability: "+15%\n+5%\n+0%",
     skill: "進場CD-2\n開技_自攻1.5倍\n無視腐化",
     leader: ""
   },
@@ -711,7 +711,7 @@ const crafts = [
     set: "none",
     acquire: "使用「根源倒錯・迪亞布羅」進行熔爐",
     accumulate: "消除心符石",
-    ability: "0/0/20",
+    ability: "+0%\n+0%\n+20%",
     skill: "進場CD-2\n消5連心回1.8倍隊回的血\n無視腐化",
     leader: ""
   },
@@ -724,7 +724,7 @@ const crafts = [
     set: "none",
     acquire: "使用「理智失序・奧丁」進行熔爐",
     accumulate: "連擊 4 或以上",
-    ability: "5/10/5",
+    ability: "+5%\n+10%\n+5%",
     skill: "開技_自攻1.5倍\n消5粒_自攻1.5倍\n無視腐化",
     leader: ""
   },
@@ -737,7 +737,7 @@ const crafts = [
     set: "none",
     acquire: "使用「日墜月落・噬日狼與喰月狼」進行熔爐",
     accumulate: "連擊 4 或以上",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "進場CD-1\n消光暗_自攻1.5倍\n無視腐化",
     leader: ""
   },
@@ -750,7 +750,7 @@ const crafts = [
     set: "none",
     acquire: "使用「野望滅絕・薩魯曼」進行熔爐",
     accumulate: "消除暗符石",
-    ability: "0/5/15",
+    ability: "+0%\n+5%\n+15%",
     skill: "延1秒\n消妖_自攻1.5倍\n無視腐化",
     leader: ""
   },
@@ -763,7 +763,7 @@ const crafts = [
     set: "none",
     acquire: "《初音未來》合作期間",
     accumulate: "發動攻擊的次數",
-    ability: "4/4/4",
+    ability: "+4%\n+4%\n+4%",
     skill: "延0.5秒\n消3水機_自攻1.1倍\n消25粒_自攻1.39倍",
     leader: ""
   },
@@ -776,7 +776,7 @@ const crafts = [
     set: "none",
     acquire: "《初音未來》合作期間",
     accumulate: "發動攻擊的次數",
-    ability: "4/4/4",
+    ability: "+4%\n+4%\n+4%",
     skill: "延0.5秒\n消10粒_自攻1.1倍\n消25粒_自攻1.39倍",
     leader: ""
   },
@@ -789,7 +789,7 @@ const crafts = [
     set: "none",
     acquire: "《初音未來》合作期間",
     accumulate: "發動攻擊的次數",
-    ability: "4/4/4",
+    ability: "+4%\n+4%\n+4%",
     skill: "延0.5秒\n消6連光_機攻1.2倍\n消25粒_自攻1.39倍",
     leader: ""
   },
@@ -802,7 +802,7 @@ const crafts = [
     set: "none",
     acquire: "桃花糕商店",
     accumulate: "連擊 4 或以上",
-    ability: "5/5/5",
+    ability: "+5%\n+10%\n+0%",
     skill: "進場CD-2\n消神_自攻1.5倍",
     leader: ""
   },
@@ -815,7 +815,7 @@ const crafts = [
     set: "none",
     acquire: "通過指定地域探索層數｜境外探索",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "消人_自攻1.15倍\n消人-人攻1.1倍",
     leader: ""
   },
@@ -828,7 +828,7 @@ const crafts = [
     set: "none",
     acquire: "港隊奧運奪金贈送",
     accumulate: "消除任何符石",
-    ability: "2/2/2",
+    ability: "+2%\n+2%\n+2%",
     skill: "開技_自攻1.1倍\n消15粒_自攻1.1倍",
     leader: ""
   },
@@ -841,7 +841,7 @@ const crafts = [
     set: "none",
     acquire: "龍紋：眾神紀錄・主線 第十六章｜魔導紀元\n龍印：殺戮戰窟｜十封－存音石碑獎勵\n龍咒：祭祀遺址｜十封－存音石碑獎勵",
     accumulate: "消除任何符石",
-    ability: "0/5/5",
+    ability: "+0%\n+5%\n+5%",
     skill: "進場CD-1\n消25粒_自攻1.2倍",
     leader: ""
   },
@@ -854,7 +854,7 @@ const crafts = [
     set: "none",
     acquire: "龍紋：魔法閣挑戰函 Extra｜十一封\n龍印：第一章｜旅人的記憶－邪馬台國傳說\n龍咒：第四章｜旅人的記憶－邪馬台國傳說",
     accumulate: "消除任何符石",
-    ability: "5/5/0",
+    ability: "+5%\n+5%\n+0%",
     skill: "延1秒\n消20粒_自攻1.15倍",
     leader: ""
   },
@@ -867,7 +867,7 @@ const crafts = [
     set: "none",
     acquire: "龍紋：不安份影子｜旅人的記憶－新生跡印\n龍印：膨脹的支配｜旅人的記憶－新生跡印\n龍咒：第五章｜旅人的記憶－邪馬台國傳說",
     accumulate: "消除心符石",
-    ability: "0/0/10",
+    ability: "+0%\n+0%\n+10%",
     skill: "進場CD-1\n進場CD-1",
     leader: ""
   },
@@ -880,7 +880,7 @@ const crafts = [
     set: "none",
     acquire: "龍紋：美夢之下｜旅人的記憶－星辰封印\n龍印：踏進末日｜旅人的記憶－星辰封印\n龍咒：第二章｜旅人的記憶－邪馬台國傳說",
     accumulate: "消除任何符石",
-    ability: "5/5/0",
+    ability: "+5%\n+5%\n+0%",
     skill: "延1秒\n消20粒_自攻1.1倍",
     leader: ""
   },
@@ -893,7 +893,7 @@ const crafts = [
     set: "none",
     acquire: "龍咒：眾神紀錄・絕望之末｜魔導紀元\n龍符：眾神紀錄・惡夢夜幕｜魔導紀元",
     accumulate: "消除任何符石",
-    ability: "5/0/5",
+    ability: "+5%\n+0%\n+5%",
     skill: "進場CD-1\n消15粒_自攻1.1倍",
     leader: ""
   },
@@ -906,7 +906,7 @@ const crafts = [
     set: "none",
     acquire: "龍紋：永恆之牢｜十封－存音石碑獎勵\n龍符：迷城入口｜十封－存音石碑獎勵",
     accumulate: "消除任何符石",
-    ability: "0/5/5",
+    ability: "+0%\n+5%\n+5%",
     skill: "消3連心魔族_自攻1.1倍\n消20粒_自攻1.5倍",
     leader: ""
   },
@@ -919,7 +919,7 @@ const crafts = [
     set: "none",
     acquire: "龍紋：魔魅之軍的行進｜十一封\n龍印：第三章｜旅人的記憶－邪馬台國傳說",
     accumulate: "連擊 4 或以上",
-    ability: "5/0/5",
+    ability: "+5%\n+0%\n+5%",
     skill: "開技_自攻1.25倍\n消25粒_自攻1.1倍",
     leader: ""
   },
@@ -932,7 +932,7 @@ const crafts = [
     set: "Molin",
     acquire: "使用「神境旅塔．莫靈」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "CD-2\n消神_神攻1.15倍",
     leader: ""
   },
@@ -945,7 +945,7 @@ const crafts = [
     set: "CangBi",
     acquire: "被審判的罪名、革命的狼煙｜旅人的記憶－代偶記事",
     accumulate: "受到攻擊次數",
-    ability: "0/10/10",
+    ability: "+0%\n+10%\n+10%",
     skill: "消直3水EP+1\n消3水_自攻1.25倍\n消6連水_自攻2.25倍",
     leader: ""
   },
@@ -958,7 +958,7 @@ const crafts = [
     set: "Matthew",
     acquire: "「尋夢人．馬休」潛能解放",
     accumulate: "消除任何符石",
-    ability: "5/5/5",
+    ability: "+5%\n+5%\n+5%",
     skill: "必延1秒\n消3連心回1.5倍隊回的血\n開技_自攻1.5倍",
     leader: ""
   },
@@ -971,7 +971,7 @@ const crafts = [
     set: "nordic",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "CD-1\n消5連水_自攻2.2倍\n消神_自攻1.5倍",
     leader: ""
   },
@@ -984,7 +984,7 @@ const crafts = [
     set: "nordic",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "CD-1\n消5連火_自攻2.2倍\n消神_自攻1.5倍",
     leader: ""
   },
@@ -997,7 +997,7 @@ const crafts = [
     set: "nordic",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "CD-1\n消5連木_自攻2.2倍\n消神_自攻1.5倍",
     leader: ""
   },
@@ -1010,7 +1010,7 @@ const crafts = [
     set: "nordic",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "CD-1\n消5連光_自攻2.2倍\n消神_自攻1.5倍",
     leader: ""
   },
@@ -1023,7 +1023,7 @@ const crafts = [
     set: "nordic",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "CD-1\n消5連暗_自攻2.2倍\n消神_自攻1.5倍",
     leader: ""
   },
@@ -1036,7 +1036,7 @@ const crafts = [
     set: "ancient",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "5/10/0",
+    ability: "+5%\n+10%\n+0%",
     skill: "消水心_自攻1.5倍\n消龍_自攻1.5倍",
     leader: ""
   },
@@ -1049,7 +1049,7 @@ const crafts = [
     set: "ancient",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "5/10/0",
+    ability: "+5%\n+10%\n+0%",
     skill: "消火心_自攻1.5倍\n消龍_自攻1.5倍",
     leader: ""
   },
@@ -1062,7 +1062,7 @@ const crafts = [
     set: "ancient",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "5/10/0",
+    ability: "+5%\n+10%\n+0%",
     skill: "消木心_自攻1.5倍\n消龍_自攻1.5倍",
     leader: ""
   },
@@ -1075,7 +1075,7 @@ const crafts = [
     set: "ancient",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "5/10/0",
+    ability: "+5%\n+10%\n+0%",
     skill: "消光心_自攻1.5倍\n消龍_自攻1.5倍",
     leader: ""
   },
@@ -1088,7 +1088,7 @@ const crafts = [
     set: "ancient",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "5/10/0",
+    ability: "+5%\n+10%\n+0%",
     skill: "消暗心_自攻1.5倍\n消龍_自攻1.5倍",
     leader: ""
   },
@@ -1101,7 +1101,7 @@ const crafts = [
     set: "timeGate",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "連擊 4 或以上",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "必延1秒\n進場CD-3\n消5粒_自攻1.5倍",
     leader: ""
   },
@@ -1114,7 +1114,7 @@ const crafts = [
     set: "grace",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "0/15/0",
+    ability: "+0%\n+15%\n+0%",
     skill: "對火目標_自攻1.5倍\n消3水_自攻1.25倍\n消20粒_自攻1.5倍",
     leader: ""
   },
@@ -1127,7 +1127,7 @@ const crafts = [
     set: "grace",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "0/15/0",
+    ability: "+0%\n+15%\n+0%",
     skill: "對木目標_自攻1.5倍\n消3火_自攻1.25倍\n消20粒_自攻1.5倍",
     leader: ""
   },
@@ -1140,7 +1140,7 @@ const crafts = [
     set: "grace",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "0/15/0",
+    ability: "+0%\n+15%\n+0%",
     skill: "對水目標_自攻1.5倍\n消3木_自攻1.25倍\n消20粒_自攻1.5倍",
     leader: ""
   },
@@ -1153,7 +1153,7 @@ const crafts = [
     set: "grace",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "0/15/0",
+    ability: "+0%\n+15%\n+0%",
     skill: "對暗目標_自攻1.5倍\n消3光_自攻1.25倍\n消20粒_自攻1.5倍",
     leader: ""
   },
@@ -1166,7 +1166,7 @@ const crafts = [
     set: "grace",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "0/15/0",
+    ability: "+0%\n+15%\n+0%",
     skill: "對光目標_自攻1.5倍\n消3暗_自攻1.25倍\n消20粒_自攻1.5倍",
     leader: ""
   },
@@ -1179,7 +1179,7 @@ const crafts = [
     set: "witch",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "連擊 4 或以上",
-    ability: "0/5/5",
+    ability: "+0%\n+5%\n+5%",
     skill: "消20粒_自攻1.5倍\n對火目標_自攻1.5倍",
     leader: ""
   },
@@ -1192,7 +1192,7 @@ const crafts = [
     set: "witch",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "連擊 4 或以上",
-    ability: "0/5/5",
+    ability: "+0%\n+5%\n+5%",
     skill: "消20粒_自攻1.5倍\n對木目標_自攻1.5倍",
     leader: ""
   },
@@ -1205,7 +1205,7 @@ const crafts = [
     set: "witch",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "連擊 4 或以上",
-    ability: "0/5/5",
+    ability: "+0%\n+5%\n+5%",
     skill: "消20粒_自攻1.5倍\n對水目標_自攻1.5倍",
     leader: ""
   },
@@ -1218,7 +1218,7 @@ const crafts = [
     set: "warcraft",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除心符石",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "消4連心_自攻1.5倍\nCD-1",
     leader: ""
   },
@@ -1231,7 +1231,7 @@ const crafts = [
     set: "warcraft",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除火符石",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "消4火_自攻1.5倍\nCD-1",
     leader: ""
   },
@@ -1244,7 +1244,7 @@ const crafts = [
     set: "warcraft",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "連擊 4 或以上",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "延1秒\n消直4木CD-1",
     leader: ""
   },
@@ -1257,7 +1257,7 @@ const crafts = [
     set: "warcraft",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除心符石",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "消4連心_自攻1.5倍\nCD-1",
     leader: ""
   },
@@ -1270,7 +1270,7 @@ const crafts = [
     set: "warcraft",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除暗符石",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "消4暗_自攻1.5倍\nCD-1",
     leader: ""
   },
@@ -1283,7 +1283,7 @@ const crafts = [
     set: "chineseBeasts",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "對火目標_自攻1.2倍\n開技_水攻1.15倍",
     leader: ""
   },
@@ -1296,7 +1296,7 @@ const crafts = [
     set: "chineseBeasts",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "對木目標_自攻1.2倍\n開技_火攻1.15倍",
     leader: ""
   },
@@ -1309,7 +1309,7 @@ const crafts = [
     set: "chineseBeasts",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "對水目標_自攻1.2倍\n開技_木攻1.15倍",
     leader: ""
   },
@@ -1322,7 +1322,7 @@ const crafts = [
     set: "chineseBeasts",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "對暗目標_自攻1.2倍\n開技_光攻1.15倍",
     leader: ""
   },
@@ -1335,7 +1335,7 @@ const crafts = [
     set: "chineseBeasts",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "發動攻擊的次數",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "對光目標_自攻1.2倍\n開技_暗攻1.15倍",
     leader: ""
   },
@@ -1348,7 +1348,7 @@ const crafts = [
     set: "ranger",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "延1秒\n消15粒_自攻2.2倍",
     leader: ""
   },
@@ -1361,7 +1361,7 @@ const crafts = [
     set: "ranger",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "延1秒\n消15粒_自攻2.2倍",
     leader: ""
   },
@@ -1374,7 +1374,7 @@ const crafts = [
     set: "ranger",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "延1秒\n消15粒_自攻2.2倍",
     leader: ""
   },
@@ -1387,7 +1387,7 @@ const crafts = [
     set: "ranger",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "延1秒\n消15粒_自攻2.2倍",
     leader: ""
   },
@@ -1400,7 +1400,7 @@ const crafts = [
     set: "ranger",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "延1秒\n消15粒_自攻2.2倍",
     leader: ""
   },
@@ -1413,7 +1413,7 @@ const crafts = [
     set: "egyptian",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除水符石",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "木傷減10%\n開技_水攻1.15倍",
     leader: ""
   },
@@ -1426,7 +1426,7 @@ const crafts = [
     set: "egyptian",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除火符石",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "水傷減10%\n開技_火攻1.15倍",
     leader: ""
   },
@@ -1439,7 +1439,7 @@ const crafts = [
     set: "egyptian",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除木符石",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "火傷減10%\n開技_木攻1.15倍",
     leader: ""
   },
@@ -1452,7 +1452,7 @@ const crafts = [
     set: "egyptian",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除光符石",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "暗傷減10%\n開技_光攻1.15倍",
     leader: ""
   },
@@ -1465,7 +1465,7 @@ const crafts = [
     set: "egyptian",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除暗符石",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "光傷減10%\n開技_暗攻1.15倍",
     leader: ""
   },
@@ -1478,7 +1478,7 @@ const crafts = [
     set: "destiny",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "消5連水_神攻1.2倍\n消4連心回1.5倍隊回的血",
     leader: ""
   },
@@ -1491,7 +1491,7 @@ const crafts = [
     set: "destiny",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "消5連火_神攻1.2倍\n消4連心回1.5倍隊回的血",
     leader: ""
   },
@@ -1504,7 +1504,7 @@ const crafts = [
     set: "destiny",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "消5連木_神攻1.2倍\n消4連心回1.5倍隊回的血",
     leader: ""
   },
@@ -1517,7 +1517,7 @@ const crafts = [
     set: "destiny",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "消5連光_神攻1.2倍\n消4連心回1.5倍隊回的血",
     leader: ""
   },
@@ -1530,7 +1530,7 @@ const crafts = [
     set: "destiny",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除任何符石",
-    ability: "10/0/10",
+    ability: "+10%\n+0%\n+10%",
     skill: "消5連暗_神攻1.2倍\n消4連心回1.5倍隊回的血",
     leader: ""
   },
@@ -1543,7 +1543,7 @@ const crafts = [
     set: "westJourney",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除水符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "延1秒\nCD-1\n開技_水攻1.15倍",
     leader: ""
   },
@@ -1556,7 +1556,7 @@ const crafts = [
     set: "westJourney",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除火符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "延1秒\nCD-1\n開技_火攻1.15倍",
     leader: ""
   },
@@ -1569,7 +1569,7 @@ const crafts = [
     set: "westJourney",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除木符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "延1秒\nCD-1\n開技_木攻1.15倍",
     leader: ""
   },
@@ -1582,7 +1582,7 @@ const crafts = [
     set: "westJourney",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除光符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "延1秒\nCD-1\n開技_光攻1.15倍",
     leader: ""
   },
@@ -1595,7 +1595,7 @@ const crafts = [
     set: "westJourney",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除暗符石",
-    ability: "10/10/10",
+    ability: "+10%\n+10%\n+10%",
     skill: "延1秒\nCD-1\n開技_暗攻1.15倍",
     leader: ""
   },
@@ -1608,7 +1608,7 @@ const crafts = [
     set: "servant",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消連擊 4 或以上",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "進場CD-3\n消6連水_龍攻1.15倍",
     leader: ""
   },
@@ -1621,7 +1621,7 @@ const crafts = [
     set: "servant",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消連擊 4 或以上",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "進場CD-3\n消6連火_龍攻1.15倍",
     leader: ""
   },
@@ -1634,7 +1634,7 @@ const crafts = [
     set: "servant",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消連擊 4 或以上",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "進場CD-3\n消6連木_龍攻1.15倍",
     leader: ""
   },
@@ -1647,7 +1647,7 @@ const crafts = [
     set: "servant",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消連擊 4 或以上",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "進場CD-3\n消6連光_龍攻1.15倍",
     leader: ""
   },
@@ -1660,7 +1660,7 @@ const crafts = [
     set: "servant",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消連擊 4 或以上",
-    ability: "10/10/0",
+    ability: "+10%\n+10%\n+0%",
     skill: "進場CD-3\n消6連暗_龍攻1.15倍",
     leader: ""
   },
@@ -1673,7 +1673,7 @@ const crafts = [
     set: "protagonist",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除水符石",
-    ability: "0/10/10",
+    ability: "+0%\n+10%\n+10%",
     skill: "CD-1\n消20粒_自攻2倍",
     leader: ""
   },
@@ -1686,7 +1686,7 @@ const crafts = [
     set: "protagonist",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除火符石",
-    ability: "0/10/10",
+    ability: "+0%\n+10%\n+10%",
     skill: "CD-1\n消20粒_自攻2倍",
     leader: ""
   },
@@ -1699,7 +1699,7 @@ const crafts = [
     set: "protagonist",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除木符石",
-    ability: "0/10/10",
+    ability: "+0%\n+10%\n+10%",
     skill: "CD-1\n消20粒_自攻2倍",
     leader: ""
   },
@@ -1712,7 +1712,7 @@ const crafts = [
     set: "protagonist",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除光符石",
-    ability: "0/10/10",
+    ability: "+0%\n+10%\n+10%",
     skill: "CD-1\n消20粒_自攻2倍",
     leader: ""
   },
@@ -1725,7 +1725,7 @@ const crafts = [
     set: "protagonist",
     acquire: "使用「對應角色」進行熔爐",
     accumulate: "消除暗符石",
-    ability: "0/10/10",
+    ability: "+0%\n+10%\n+10%",
     skill: "CD-1\n消20粒_自攻2倍",
     leader: ""
   },
@@ -1738,7 +1738,7 @@ const crafts = [
     set: "none",
     acquire: "週年贈送",
     accumulate: "消除任何符石",
-    ability: "4/4/4",
+    ability: "+4%\n+4%\n+4%",
     skill: "必延1秒\n進場CD-1",
     leader: ""
   },
@@ -1751,7 +1751,7 @@ const crafts = [
     set: "none",
     acquire: "週年贈送",
     accumulate: "消除任何符石",
-    ability: "3/3/3",
+    ability: "+3%\n+3%\n+3%",
     skill: "延1秒\n進場CD-1",
     leader: ""
   },
@@ -1764,7 +1764,7 @@ const crafts = [
     set: "none",
     acquire: "週年贈送",
     accumulate: "消除任何符石",
-    ability: "1/1/1",
+    ability: "+1%\n+1%\n+1%",
     skill: "延1秒\n進場CD-1",
     leader: ""
   },
@@ -1777,7 +1777,7 @@ const crafts = [
     set: "none",
     acquire: "週年贈送",
     accumulate: "消除任何符石",
-    ability: "1/1/1",
+    ability: "+1%\n+1%\n+1%",
     skill: "延1秒\n進場CD-1",
     leader: ""
   },
@@ -1790,7 +1790,7 @@ const crafts = [
     set: "none",
     acquire: "神魔學園祭",
     accumulate: "消除任何符石",
-    ability: "1/1/1",
+    ability: "+1%\n+1%\n+1%",
     skill: "延1秒\n消4連心回1.5倍隊回的血",
     leader: ""
   },

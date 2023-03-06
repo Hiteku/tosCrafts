@@ -26,6 +26,7 @@ function filterCrafts(filter) {
     const raceCell = newRow.insertCell();
     const setCell = newRow.insertCell();
     const acquireCell = newRow.insertCell();
+    const abilityTitle = newRow.insertCell();
     const abilityCell = newRow.insertCell();
     const skillCell = newRow.insertCell();
     
@@ -76,6 +77,7 @@ function filterCrafts(filter) {
     setCell.innerText = cs;
     acquireCell.innerText = craft.acquire;
     abilityCell.innerText = craft.ability;
+    abilityTitle.innerText = '血\n攻\n回';
     skillCell.innerText = craft.skill;
     
     // 將新的表格行添加到表格的 tbody 元素中
