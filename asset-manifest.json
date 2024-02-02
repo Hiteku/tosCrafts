@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tosCrafts/static/css/main.a5f515ac.css",
+    "main.js": "/tosCrafts/static/js/main.9e95d59d.js",
+    "index.html": "/tosCrafts/index.html",
+    "main.a5f515ac.css.map": "/tosCrafts/static/css/main.a5f515ac.css.map",
+    "main.9e95d59d.js.map": "/tosCrafts/static/js/main.9e95d59d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a5f515ac.css",
+    "static/js/main.9e95d59d.js"
+  ]
+}
