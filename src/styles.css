@@ -1,0 +1,143 @@
+body {
+  background-color: #333;
+  color: #fff;
+  font-family: Microsoft JhengHei;
+}
+
+hr {
+  margin-top: 20px;
+}
+
+h1 {
+  color: #ddd;
+  text-align: center;
+  margin: 30px 0px 30px;
+}
+
+strong {
+  color: #0080ff;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+select {
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #444;
+  color: #fff;
+  font-size: 14px;
+  height: 34px;
+  margin: 0px 0px 0px 5px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background-color: #444;
+  color: #fff;
+  font-size: 16px;
+  width: 150px;
+}
+
+.result-table {
+  border-radius: 8px;
+  width: 100%;
+  padding: 14px;
+  margin: 16px 0px 0px;
+}
+
+.result-table th, .result-table td {
+  border: 1px solid #555;
+  padding: 8px;
+  text-align: center;
+}
+
+.border {
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 6px;
+  margin: 0px 20% 10%;
+}
+
+@media (max-width: 930px) {
+  .border {
+    margin: 0px 15% 10%;
+  }
+}
+
+@media (max-width: 850px) {
+  .border {
+    margin: 0px 10% 10%;
+  }
+}
+
+@media (max-width: 770px) {
+  .border {
+    margin: 0px 5% 10%;
+  }
+}
+
+@media (max-width: 690px) {
+  .border {
+    margin: 0px 0px 10%;
+  }
+}
+
+.filter {
+  padding: 5px;
+  margin: 10px 0px 0px 10px;
+}
+
+.filter p {
+  margin: 10px 0px 0px 10px;
+}
+
+.filter label {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 16px;
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.3s ease;
+  margin: 10px 0px 0px 10px;
+}
+
+.filter label:hover {
+  background-color: #555;
+}
+
+.selected {
+  background-color: #0060c0;
+  color: #fff;
+}
+
+.craft-info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 9;
+  margin-right: 5px;
+}
+
+.src {
+  text-align: center;
+}
+
+.src img{
+  max-width: 15px;
+  margin-bottom: -2px;
+  border-radius: 9%;
+}
