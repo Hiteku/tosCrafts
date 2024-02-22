@@ -75,7 +75,7 @@ function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [craftTypes, setCraftTypes] = useState({
     selfUnlimited: true,
-    selfLimited: false,
+    selfLimited: true,
     cooperativeUnlimited: true,
     cooperativeLimited: false,
   });
@@ -389,13 +389,13 @@ function App() {
             <a href="https://forum.gamer.com.tw/Co.php?bsn=23805&sn=4065649" target="_blank" rel="noopener noreferrer">
               <img
                 src={`https://hiteku.github.io/img/-/bahamut.png`}
-                alt="imgCover"
+                alt="imgBahamut"
               />
             </a>&nbsp;
             <a href="https://www.youtube.com/Hiteku" target="_blank" rel="noopener noreferrer">
               <img
                 src={`https://hiteku.github.io/img/-/youtube.png`}
-                alt="imgCover"
+                alt="imgYoutube"
               />
             </a> © 2023 Hiteku
           </sub>
