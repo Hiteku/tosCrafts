@@ -389,13 +389,13 @@ function App() {
           <sub>
             <a href="https://forum.gamer.com.tw/Co.php?bsn=23805&sn=4065649" target="_blank" rel="noopener noreferrer">
               <img
-                src={`https://hiteku.github.io/img/-/bahamut.png`}
+                src={`https://hiteku.fly.dev/static/assets/logo/bahamut.png`}
                 alt="imgBahamut"
               />
             </a>&nbsp;
             <a href="https://www.youtube.com/Hiteku" target="_blank" rel="noopener noreferrer">
               <img
-                src={`https://hiteku.github.io/img/-/youtube.png`}
+                src={`https://hiteku.fly.dev/static/assets/logo/youtube.png`}
                 alt="imgYoutube"
               />
             </a> © 2023 Hiteku
