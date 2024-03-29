@@ -75,7 +75,7 @@ function App() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [craftTypes, setCraftTypes] = useState({
     selfUnlimited: true,
-    selfLimited: true,
+    selfLimited: false,
     cooperativeUnlimited: true,
     cooperativeLimited: false,
   });
@@ -138,7 +138,7 @@ function App() {
   const attributeOptions = [
     { name: 'attribute', value: 'water', label: '水' },
     { name: 'attribute', value: 'fire', label: '火' },
-    { name: 'attribute', value: 'wood', label: '木' },
+    { name: 'attribute', value: 'earth', label: '木' },
     { name: 'attribute', value: 'light', label: '光' },
     { name: 'attribute', value: 'dark', label: '暗' },
     { name: 'attribute', value: 'none', label: '不限' },
@@ -150,13 +150,13 @@ function App() {
     { name: 'race', value: 'human', label: '人類' },
     { name: 'race', value: 'beast', label: '獸類' },
     { name: 'race', value: 'dragon', label: '龍類' },
-    { name: 'race', value: 'fairy', label: '妖精' },
-    { name: 'race', value: 'machine', label: '機械' },
+    { name: 'race', value: 'elf', label: '妖精' },
+    { name: 'race', value: 'machina', label: '機械' },
     { name: 'race', value: 'none', label: '不限' },
   ];
 
   const simplifySkill = (skill) => {
-    return skill.toString().replace('提升', '').replace(/此角色的主動技能[\s\S]*/, '主動技變換')
+    return skill.toString().replace('攻擊力提升', '攻').replace(/此角色的主動技能[\s\S]*/, '主動技變換')
     .replace(/於自身直行首批消除 1 組 (\d+) 粒或以上(.+?)符石時，自身技能 (.+?) (.+?) (\d+)/, '自身直行首消 $1 連$2 $3$4$5')
     .replace(/消除 (\d+) 組 (\d+) 粒或以上的(.+?)符石，(.*?)攻擊力 (\d+(\.\d+)?) 倍/, '消 $2 連$3_$4攻 $5 倍')
     .replace(/消除 (\d+) 組 (\d+) 粒或以上符石，(.*?)攻擊力 (\d+(\.\d+)?) 倍/, '消 $2 連_$3攻 $4 倍')
@@ -173,7 +173,7 @@ function App() {
     .replace(/自身為(.*?)時，自身(.*?) (\d+(\.\d+)?) 倍/, '若$1_自$2 $3 倍')
     .replace(/(.*?)攻擊力 (\d+(\.\d+)?) 倍/, '$1攻 $2 倍')
     .replace('進入關卡後，', '進場 ').replace('自身主動技能 CD 減少 ', 'CD-')
-    .replace('攻擊無視敵人防禦力', '攻擊無視敵防').replace('自身無視〖腐化〗敵技', '自身無視腐化')
+    .replace('自身攻擊無視敵人防禦力', '自身無視敵防').replace('自身無視〖腐化〗敵技', '自身無視腐化')
     .replace('生命力', '血').replace('攻擊力', '攻').replace('額外', '')
     .replaceAll('_自身', '_自').replaceAll('屬性', '').replaceAll('族', '').replaceAll('類', '').replaceAll('妖精', '妖').replaceAll('機械', '機')
     .replace('此技能效果不能疊加', '不能疊加').replace('種成員', '種族成員').replace('EP增加', 'EP+').replace('CD減少', 'CD-')
