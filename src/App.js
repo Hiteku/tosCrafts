@@ -68,7 +68,9 @@ function App() {
   const [attribute, setAttribute] = useState('none');
   const [race, setRace] = useState('none');
   const [series, setSeries] = useState('all');
+  const [accumulate, setAccumulate] = useState('none');
   const [keyword, setKeyword] = useState('');
+  const [expandedKeywords, setExpandedKeywords] = useState(false);
   const [showCraftInfo, setShowCraftInfo] = useState(null);
   // const [hoveredCraft, setHoveredCraft] = useState(null);
   const [craftInfoPosition, setCraftInfoPosition] = useState({ top: 0, left: 0 });
@@ -80,8 +82,18 @@ function App() {
     cooperativeLimited: false,
   });
   const craftInfoRef = useRef(null);
+  const commonKeywords = ['CD-2', 'CD-3', '自攻', '人攻', '回血', '喚靈', '黑金', '通行證'];
 
   useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (!event.target.closest('button')) {
+        setExpandedKeywords(false);
+      }
+    };
+
+    // 在 component mount 時添加點擊事件監聽器
+    document.addEventListener('click', handleClickOutside);
+
     const handleCraftInfoClick = (event) => {
       if (craftInfoRef.current && !craftInfoRef.current.contains(event.target)) {
         setShowCraftInfo(null);
@@ -92,6 +104,7 @@ function App() {
     window.addEventListener('resize', () => setWindowWidth(window.innerWidth));
   
     return () => {
+      document.removeEventListener('click', handleClickOutside);
       window.removeEventListener('click', handleCraftInfoClick);
       window.removeEventListener('resize', () => setWindowWidth(window.innerWidth));
     };
@@ -110,8 +123,20 @@ function App() {
     setShowCraftInfo(craft);
   };
 
+  const toggleKeywords = () => {
+    setExpandedKeywords(!expandedKeywords);
+  };
+
+  const selectKeyword = (keyword) => {
+    setKeyword(keyword);
+  };
+
   const handleAttributeChange = (value) => {
     setAttribute(value);
+  };
+
+  const handleAccumulateChange = (value) => {
+    setAccumulate(value);
   };
 
   const handleRaceChange = (value) => {
@@ -154,6 +179,15 @@ function App() {
     { name: 'race', value: 'machina', label: '機械' },
     { name: 'race', value: 'none', label: '不限' },
   ];
+  
+  const accumulateOptions = [
+    { name: 'accumulate', value: 'any', label: '首消任何符石' },
+    { name: 'accumulate', value: 'specify', label: '首消指定符石' },
+    { name: 'accumulate', value: 'launch', label: '發動攻擊次數' },
+    { name: 'accumulate', value: 'under', label: '受到攻擊次數' },
+    { name: 'accumulate', value: '4C', label: '4 Combo 以上' },
+    { name: 'accumulate', value: 'none', label: '不限' },
+  ];
 
   const simplifySkill = (skill) => {
     return skill.toString().replace('攻擊力提升', '攻').replace(/此角色的主動技能[\s\S]*/, '主動技變換')
@@ -175,13 +209,22 @@ function App() {
     .replace('進入關卡後，', '進場 ').replace('自身主動技能 CD 減少 ', 'CD-')
     .replace('自身攻擊無視敵人防禦力', '自身無視敵防').replace('自身無視〖腐化〗敵技', '自身無視腐化')
     .replace('生命力', '血').replace('攻擊力', '攻').replace('額外', '')
-    .replaceAll('_自身', '_自').replaceAll('屬性', '').replaceAll('族', '').replaceAll('類', '').replaceAll('妖精', '妖').replaceAll('機械', '機')
+    .replaceAll('自身攻', '自攻').replaceAll('屬性', '').replaceAll('族', '').replaceAll('類', '').replaceAll('妖精', '妖').replaceAll('機械', '機')
     .replace('此技能效果不能疊加', '不能疊加').replace('種成員', '種族成員').replace('EP增加', 'EP+').replace('CD減少', 'CD-')
   };
 
   const filteredCrafts = crafts.filter((craft) => {
     const attributeMatches = attribute === 'none' || craft.attribute.includes(attribute) || craft.attribute === 'none';
     const raceMatches = race === 'none' || craft.race.includes(race) || craft.race === 'none';
+    var accumulate_detail;
+    switch (accumulate) {
+      case 'any': accumulate_detail = '任何'; break;
+      case 'launch': accumulate_detail = '裝備此龍刻的召喚獸發動攻擊的次數'; break;
+      case 'under': accumulate_detail = '召喚獸受到攻擊次數'; break;
+      case '4C': accumulate_detail = '首批消除 ≥4 連擊 (Combo)'; break;
+      default: accumulate_detail = '符石'; break;
+    }
+    const accumulateMatches = accumulate === 'none' || (accumulate === 'specify' ? (!craft.accumulate.includes('任何') && craft.accumulate.includes(accumulate_detail)) : craft.accumulate.includes(accumulate_detail));
     const seriesMatches = (craftTypes.selfUnlimited && !craft.isCollab && craft.series === '') || (craftTypes.selfLimited && !craft.isCollab && craft.series !== '' && (craft.series === series || series === 'all')) ||
     (craftTypes.cooperativeUnlimited && craft.isCollab && craft.series === '') || (craftTypes.cooperativeLimited && craft.isCollab && craft.series !== '' && (craft.series === series || series === 'all'))
     var shk = keyword;
@@ -191,6 +234,8 @@ function App() {
     if (shk.includes('延秒')) shk = '延長移動符石時間'
     if (shk.includes('拼圖')) shk = '指定形狀'
     if (shk.includes('直傷')) shk = '敵人造成'
+    if (shk.includes('倍回')) shk = '倍隊伍回復力'
+    if (shk.includes('回血')) shk = '每回合回復'
     if (shk.includes('固版') || shk.includes('定版')) shk = '數直行'
     const keywordMatches = (
       craft.name.includes(shk) ||
@@ -206,7 +251,7 @@ function App() {
       craft.leader.some(e => e.includes(shk)) ||
       craft.tag.includes(shk)
     );
-    return attributeMatches && raceMatches && seriesMatches && keywordMatches;
+    return attributeMatches && raceMatches && accumulateMatches && seriesMatches && keywordMatches;
   });
 
   function isNumberInRange(ranges, number) {
@@ -235,73 +280,88 @@ function App() {
         selected={race}
         handleOptionChange={handleRaceChange}
       />
+      <details>
+        <summary>更多篩選</summary>
+        <div className='filter'>
+          <label className={craftTypes.selfUnlimited ? 'selected' : ''}>
+            <input
+              type="checkbox"
+              checked={craftTypes.selfUnlimited}
+              onChange={() => handleCheckboxChange('selfUnlimited')}
+            />自家非指定
+          </label>
+
+          <label className={craftTypes.cooperativeUnlimited ? 'selected' : ''}>
+            <input
+              type="checkbox"
+              checked={craftTypes.cooperativeUnlimited}
+              onChange={() => handleCheckboxChange('cooperativeUnlimited')}
+            />合作非指定
+          </label>
+
+          {/* {hideTd && <br/>} */}
+          <label className={craftTypes.selfLimited ? 'selected' : ''}>
+            <input
+              type="checkbox"
+              checked={craftTypes.selfLimited}
+              onChange={() => handleCheckboxChange('selfLimited')}
+            />自家指定
+          </label>
+          {(craftTypes.selfLimited) && (<>
+          <i className="fa-solid fa-right-long"></i>
+          <select value={series} onChange={handleSeriesChange}>
+            <option value='all'>不限</option>
+            {crafts
+              .filter((craft) => !craft.isCollab)
+              .map((craft) => craft.series)
+              .filter((value, index, self) => self.indexOf(value) === index)
+              .map((value) => value !== '' && (
+                <option key={value} value={value}>
+                  {value}
+                </option>
+              ))}
+          </select></>)}
+
+          {/* {hideTd && <br/>} */}
+          <label className={craftTypes.cooperativeLimited ? 'selected' : ''}>
+            <input
+              type="checkbox"
+              checked={craftTypes.cooperativeLimited}
+              onChange={() => handleCheckboxChange('cooperativeLimited')}
+            />合作指定
+          </label>
+          {(craftTypes.cooperativeLimited) && (<>
+          <i className="fa-solid fa-right-long"></i>
+          <select value={series} onChange={handleSeriesChange}>
+            <option value='all'>不限</option>
+            {crafts
+              .filter((craft) => craft.isCollab)
+              .map((craft) => craft.series)
+              .filter((value, index, self) => self.indexOf(value) === index)
+              .map((value) => value !== '' && (
+                <option key={value} value={value}>
+                  {value}
+                </option>
+              ))}
+          </select></>)}
+        </div>
+        <RadioOptions
+          options={accumulateOptions}
+          selected={accumulate}
+          handleOptionChange={handleAccumulateChange}
+        />
+      </details>
 
       <div className='filter'>
-        <label className={craftTypes.selfUnlimited ? 'selected' : ''}>
-          <input
-            type="checkbox"
-            checked={craftTypes.selfUnlimited}
-            onChange={() => handleCheckboxChange('selfUnlimited')}
-          />自家非指定
-        </label>
-
-        <label className={craftTypes.cooperativeUnlimited ? 'selected' : ''}>
-          <input
-            type="checkbox"
-            checked={craftTypes.cooperativeUnlimited}
-            onChange={() => handleCheckboxChange('cooperativeUnlimited')}
-          />合作非指定
-        </label>
-
-        {/* {hideTd && <br/>} */}
-        <label className={craftTypes.selfLimited ? 'selected' : ''}>
-          <input
-            type="checkbox"
-            checked={craftTypes.selfLimited}
-            onChange={() => handleCheckboxChange('selfLimited')}
-          />自家指定
-        </label>
-        {(craftTypes.selfLimited) && (<>
-        <i className="fa-solid fa-right-long"></i>
-        <select value={series} onChange={handleSeriesChange}>
-          <option value='all'>不限</option>
-          {crafts
-            .filter((craft) => !craft.isCollab)
-            .map((craft) => craft.series)
-            .filter((value, index, self) => self.indexOf(value) === index)
-            .map((value) => value !== '' && (
-              <option key={value} value={value}>
-                {value}
-              </option>
+        <p>關鍵字：<input type="text" value={keyword} onChange={handleKeywordChange} />
+        <button onClick={toggleKeywords}>常用</button></p>
+        {expandedKeywords && (
+          <div className='keyword-dropdown'>
+            {commonKeywords.map((keyword) => (
+              <div key={keyword} onClick={() => selectKeyword(keyword)}>{keyword}</div>
             ))}
-        </select></>)}
-
-        {/* {hideTd && <br/>} */}
-        <label className={craftTypes.cooperativeLimited ? 'selected' : ''}>
-          <input
-            type="checkbox"
-            checked={craftTypes.cooperativeLimited}
-            onChange={() => handleCheckboxChange('cooperativeLimited')}
-          />合作指定
-        </label>
-        {(craftTypes.cooperativeLimited) && (<>
-        <i className="fa-solid fa-right-long"></i>
-        <select value={series} onChange={handleSeriesChange}>
-          <option value='all'>不限</option>
-          {crafts
-            .filter((craft) => craft.isCollab)
-            .map((craft) => craft.series)
-            .filter((value, index, self) => self.indexOf(value) === index)
-            .map((value) => value !== '' && (
-              <option key={value} value={value}>
-                {value}
-              </option>
-            ))}
-        </select></>)}
-      </div>
-
-      <div className='filter'>
-        <p>關鍵字：<input type="text" value={keyword} onChange={handleKeywordChange} /></p>
+          </div>
+        )}
       </div>
 
       <div style={{ textAlign: 'center', margin: '-6px 0px -24px' }}><sub>點選龍刻圖示查看詳細資料</sub></div>
