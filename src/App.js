@@ -40,7 +40,7 @@ function CraftInfo({ craft, craftInfoRef, style }) {
       {(craft.suitable) && (<><hr/><strong>指定角色</strong><br/>{(() => {
         var text = craft.suitable.replace(/\[(.*?)\((\d+)\)\]/g, (match, name, id) => {
           var imgUrl = `https://web-assets.tosconfig.com/gallery/icons/${String(id).padStart(4, '0')}.jpg`;
-          if (id >= 10669 && id <= 10682) imgUrl = `${path}/cards/icon/${String(id).padStart(4, '0')}i.png`;
+          // if (id >= 10669 && id <= 10682) imgUrl = `${path}/cards/icon/${String(id).padStart(4, '0')}i.png`;
           const imgElement = `<img style="width: 50px; margin: 1.3px 3.9px -19px 0px; border-radius: 9%" src="${imgUrl}">`
           return `<a href="https://tos.fandom.com/zh/wiki/${id}" target="_blank">${imgElement}</a>`;
         });
