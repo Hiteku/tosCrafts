@@ -83,7 +83,7 @@ function App() {
     cooperativeLimited: false,
   });
   const craftInfoRef = useRef(null);
-  const commonKeywords = ['CD-2', 'CD-3', '自攻', '人攻', '回血', '喚靈', '黑金', '通行證'];
+  const commonKeywords = ['CD-2', 'CD-3', '自攻', '人攻', '回血', '喚靈', '熔爐', '黑金', '通行證'];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
