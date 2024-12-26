@@ -391,7 +391,7 @@ function App() {
               <tr key={craft.num}>
                 <td rowSpan={hideTd ? '3' : '2'} style={{ textAlign: 'center', fontSize: '14px' }}>
                   <img
-                    src={(craft.tag.includes('迷宮') || craft.tag.includes('全新自家') || (craft.isCollab && craft.series !== '' && craft.series !== '怪物彈珠')) ? (`${path}/crafts/icon/${parseInt(craft.num)+1}.png`) : (craft.num.includes(', ') ? `${path}/crafts/icon/${parseInt(craft.num.slice(0, craft.num.indexOf('-')))+1}.png` : `${path}/crafts/icon/${craft.num}.png`)}
+                    src={(craft.tag.includes('迷宮') || craft.tag.includes('黑嘉嘉') || craft.tag.includes('全新自家') || (craft.isCollab && craft.series !== '' && craft.series !== '怪物彈珠')) ? (`${path}/crafts/icon/${parseInt(craft.num)+1}.png`) : (craft.num.includes(', ') ? `${path}/crafts/icon/${parseInt(craft.num.slice(0, craft.num.indexOf('-')))+1}.png` : `${path}/crafts/icon/${craft.num}.png`)}
                     alt="img"
                     style={{ width: iconWidth + 'px' }}
                     onClick={(event) => handleImageHover(event, craft)}
