@@ -35,7 +35,7 @@ function CraftInfo({ craft, craftInfoRef, style }) {
           return `<a href="https://tos.fandom.com/zh/wiki/${id}" target="_blank">${imgElement}</a>`;
         });
         if (!craft.acquire.includes(')]')) text = craft.acquire;
-        return (<div dangerouslySetInnerHTML={{ __html: (craft.isCollab && craft.series !== '') ? '《' + craft.series + '》' + text : text }} />);
+        return (<div dangerouslySetInnerHTML={{ __html: (craft.isCollab && craft.series !== '' && !craft.acquire.includes('熔爐')) ? '《' + craft.series + '》' + text : text }} />);
       })()}
       {(craft.suitable) && (<><hr/><strong>指定角色</strong><br/>{(() => {
         var text = craft.suitable.replace(/\[(.*?)\((\d+)\)\]/g, (match, name, id) => {
