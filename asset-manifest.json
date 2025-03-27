@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/tosCrafts/static/css/main.36e65781.css",
-    "main.js": "/tosCrafts/static/js/main.15d24cf5.js",
+    "main.js": "/tosCrafts/static/js/main.d19f9abe.js",
     "index.html": "/tosCrafts/index.html",
     "main.36e65781.css.map": "/tosCrafts/static/css/main.36e65781.css.map",
-    "main.15d24cf5.js.map": "/tosCrafts/static/js/main.15d24cf5.js.map"
+    "main.d19f9abe.js.map": "/tosCrafts/static/js/main.d19f9abe.js.map"
   },
   "entrypoints": [
     "static/css/main.36e65781.css",
-    "static/js/main.15d24cf5.js"
+    "static/js/main.d19f9abe.js"
   ]
 }
