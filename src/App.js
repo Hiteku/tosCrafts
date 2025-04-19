@@ -83,7 +83,7 @@ function App() {
     cooperativeLimited: false,
   });
   const craftInfoRef = useRef(null);
-  const commonKeywords = ['CD-2', 'CD-3', '自攻', '人攻', '回血', '喚靈', '熔爐', '黑金', '通行證'];
+  const commonKeywords = ['CD-2', 'CD-3', '獵殺', '人攻', '回血', '喚靈', '熔爐', '黑金', '通行證'];
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -233,6 +233,7 @@ function App() {
     if (shk.includes('五屬擊')) shk = '五屬攻擊'
     if (shk.includes('延遲')) shk = 'CD +'
     if (shk.includes('延秒')) shk = '延長移動符石時間'
+    if (shk.includes('獵殺')) shk = '目標攻'
     if (shk.includes('拼圖')) shk = '指定形狀'
     if (shk.includes('直傷')) shk = '敵人造成'
     if (shk.includes('倍回')) shk = '倍隊伍回復力'
