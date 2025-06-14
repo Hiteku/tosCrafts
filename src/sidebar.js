@@ -65,7 +65,7 @@ const Sidebar = () => {
                 <ul>
                   <li>
                     <a href="https://hiteku.github.io/tosCrafts/">龍刻武裝搜尋</a>
-                    <img src={"https://hiteku.github.io/img/tos/crafts/icon/runeEquipment_108.png"} alt="" style={{ width: '25px' }} />
+                    <img src={"https://hiteku.github.io/img/tos/crafts/-/runeEquipment_108.png"} alt="" style={{ width: '25px' }} />
                   </li>
                   <li>
                     <a href="https://hiteku.github.io/tosPath/">固版轉法查詢</a>
