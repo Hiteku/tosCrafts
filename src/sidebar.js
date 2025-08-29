@@ -48,7 +48,7 @@ const Sidebar = () => {
                   </li>
                   <li>
                     <a href="https://hiteku.github.io/msBoss/">BOSS篩選</a>
-                    <img src={"https://hiteku.github.io/img/ms/icon/furniture/殺人鯨兔子娃娃抱枕.png"} alt="" style={{ width: '27px', margin: '0 0 0 2px' }} />
+                    <img src={"https://hiteku.github.io/img/ms/icon/furnishing/殺人鯨兔子娃娃抱枕.png"} alt="" style={{ width: '27px', margin: '0 0 0 2px' }} />
                   </li>
                   {/* <li>
                     <a href="https://hiteku.github.io/msClip/">裝備自動裁剪</a>

@@ -460,7 +460,7 @@ function App() {
                 src={`https://hiteku.vercel.app/static/assets/icon/youtube.png`}
                 alt="imgYoutube"
               />
-            </a> © 2023 Hiteku・部分圖檔由 gyw9s6tpcp 提供。
+            </a> © 2023 Hiteku・部分圖檔由 成、gyw9s6tpcp、死魚眼 提供。
           </sub>
         </div>
       </div>
