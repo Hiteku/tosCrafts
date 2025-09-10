@@ -388,62 +388,65 @@ function App() {
           </thead>
           <tbody>
             {filteredCrafts.map((craft) => (
-              <>
-              <tr key={craft.num}>
-                <td rowSpan={hideTd ? '3' : '2'} style={{ textAlign: 'center', fontSize: '14px' }}>
-                  <img
-                    src={(craft.tag.includes('迷宮') || craft.tag.includes('黑嘉嘉') || craft.tag.includes('全新自家') || (craft.isCollab && craft.series !== '' && craft.series !== '怪物彈珠')) ? (`${path}/crafts/icon/${parseInt(craft.num)+1}.png`) : (craft.num.includes(', ') ? `${path}/crafts/icon/${parseInt(craft.num.slice(0, craft.num.indexOf('-')))+1}.png` : `${path}/crafts/icon/${craft.num}.png`)}
-                    alt="img"
-                    style={{ width: iconWidth + 'px' }}
-                    onClick={(event) => handleImageHover(event, craft)}
-                    onMouseEnter={(event) => handleImageHover(event, craft)}
-                    // onMouseLeave={() => setHoveredCraft(null)}
-                  />
-                  <br />
-                  {craft.name}
-                </td>
-                <td>
-                  <img
-                    src={`${path}/-/${craft.attribute.includes(',') ? ((attribute === craft.attribute.split(', ')[1] || race === craft.race.split(', ')[1]) ? craft.attribute.split(', ')[1] : craft.attribute.split(', ')[0]) : craft.attribute}.png`}
-                    alt="img"
-                    style={{ width: '25px' }}
-                  />
-                </td>
-                <td>
-                  <img
-                    src={`${path}/-/${craft.race.includes(',') ? ((attribute === craft.attribute.split(', ')[1] || race === craft.race.split(', ')[1]) ? craft.race.split(', ')[1] : craft.race.split(', ')[0]) : craft.race}.png`}
-                    alt="img"
-                    style={{ width: '25px' }}
-                  />
-                </td>
-                <td rowSpan="2" style={{ textAlign: 'left'}}>{craft.ability.map((item, index) => (
-                  <div key={index}>
-                    {index === 0 ? '血' : index === 1 ? '攻' : index === 2 ? '回' : ''}{item}
-                  </div>
-                ))}</td>
-                {!hideTd && (
-                  <td rowSpan="2" style={{ textAlign: 'left'}}>
-                  {craft.skill.map((item, index) => (
-                    <div key={index}>
-                      ・{simplifySkill(item)}
-                    </div>
-                  ))}</td>
-                )}
-              </tr>
-              <tr>
-                <td colSpan="2" style={{ fontSize: '14px' }}>{craft.series === '不限' ? '　' : craft.series}</td>
-              </tr>
-              {hideTd && (
+              <React.Fragment key={craft.num}>
                 <tr>
-                  <td colSpan="3" style={{ textAlign: 'left'}}>
-                  {craft.skill.map((item, index) => (
-                    <div key={index}>
-                      ・{simplifySkill(item)}
-                    </div>
-                  ))}</td>
+                  <td rowSpan={hideTd ? '3' : '2'} style={{ textAlign: 'center', fontSize: '14px' }}>
+                    <img
+                      src={(craft.num.includes('-') || (craft.isCollab && craft.series !== '怪物彈珠')) ? (`${path}/crafts/icon/${parseInt(craft.num)+1}.png`) : (craft.num.includes(', ') ? `${path}/crafts/icon/${parseInt(craft.num.slice(0, craft.num.indexOf('-')))+1}.png` : `${path}/crafts/icon/${craft.num}.png`)}
+                      alt="img"
+                      style={{ width: iconWidth + 'px' }}
+                      onClick={(event) => handleImageHover(event, craft)}
+                      onMouseEnter={(event) => handleImageHover(event, craft)}
+                    />
+                    <br />
+                    {craft.name}
+                  </td>
+                  <td>
+                    <img
+                      src={`${path}/-/${craft.attribute.includes(',') ? ((attribute === craft.attribute.split(', ')[1] || race === craft.race.split(', ')[1]) ? craft.attribute.split(', ')[1] : craft.attribute.split(', ')[0]) : craft.attribute}.png`}
+                      alt="img"
+                      style={{ width: '25px' }}
+                    />
+                  </td>
+                  <td>
+                    <img
+                      src={`${path}/-/${craft.race.includes(',') ? ((attribute === craft.attribute.split(', ')[1] || race === craft.race.split(', ')[1]) ? craft.race.split(', ')[1] : craft.race.split(', ')[0]) : craft.race}.png`}
+                      alt="img"
+                      style={{ width: '25px' }}
+                    />
+                  </td>
+                  <td rowSpan="2" style={{ textAlign: 'left'}}>
+                    {craft.ability.map((item, index) => (
+                      <div key={index}>
+                        {index === 0 ? '血' : index === 1 ? '攻' : index === 2 ? '回' : ''}{item}
+                      </div>
+                    ))}
+                  </td>
+                  {!hideTd && (
+                    <td rowSpan="2" style={{ textAlign: 'left'}}>
+                      {craft.skill.map((item, index) => (
+                        <div key={index}>
+                          ・{simplifySkill(item)}
+                        </div>
+                      ))}
+                    </td>
+                  )}
                 </tr>
-              )}
-              </>
+                <tr>
+                  <td colSpan="2" style={{ fontSize: '14px' }}>{craft.series === '不限' ? '　' : craft.series}</td>
+                </tr>
+                {hideTd && (
+                  <tr>
+                    <td colSpan="3" style={{ textAlign: 'left'}}>
+                      {craft.skill.map((item, index) => (
+                        <div key={index}>
+                          ・{simplifySkill(item)}
+                        </div>
+                      ))}
+                    </td>
+                  </tr>
+                )}
+              </React.Fragment>
             ))}
           </tbody>
         </table>
