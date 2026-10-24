@@ -191,7 +191,7 @@ function App() {
   ];
 
   const simplifySkill = (skill) => {
-    return skill.toString().replace('攻擊力提升', '攻').replace(/此角色的主動技能[\s\S]*/, '主動技變換')
+    return skill.toString().replace('攻擊力提升', '攻').replace(/此角色的主動技能[\s\S]*/, '主動技變換').replace('種族', '種ㄗㄨˊ')
     .replace(/於自身直行首批消除 1 組 (\d+) 粒或以上(.+?)符石時，自身技能 (.+?) (.+?) (\d+)/, '自身直行首消 $1 連$2 $3$4$5')
     .replace(/消除 (\d+) 組 (\d+) 粒或以上的(.+?)符石，(.*?)攻擊力 (\d+(\.\d+)?) 倍/, '消 $2 連$3_$4攻 $5 倍')
     .replace(/消除 (\d+) 組 (\d+) 粒或以上符石，(.*?)攻擊力 (\d+(\.\d+)?) 倍/, '消 $2 連_$3攻 $4 倍')
@@ -211,7 +211,7 @@ function App() {
     .replace('自身攻擊無視敵人防禦力', '自身無視敵防').replace('自身無視〖腐化〗敵技', '自身無視腐化')
     .replace('生命力', '血').replace('攻擊力', '攻').replace('額外', '')
     .replaceAll('自身攻', '自攻').replaceAll('屬性', '').replaceAll('族', '').replaceAll('類', '').replaceAll('妖精', '妖').replaceAll('機械', '機')
-    .replace('此技能效果不能疊加', '不能疊加').replace('種成員', '種族成員').replace('EP增加', 'EP+').replace('CD減少', 'CD-')
+    .replace('此技能效果不能疊加', '不能疊加').replace('EP增加', 'EP+').replace('CD減少', 'CD-').replace('種ㄗㄨˊ', '種族')
   };
 
   const filteredCrafts = crafts.filter((craft) => {
